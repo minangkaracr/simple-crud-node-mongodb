@@ -30,6 +30,8 @@ const ProductSchema = mongoose.Schema(
   }
 );
 
+
+ProductSchema.index({ name: 'text' }); //search by name
 const Product = mongoose.model("Product", ProductSchema)
 
 module.exports = Product;

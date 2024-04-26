@@ -65,3 +65,10 @@ module.exports = {
     updateProduct,
     deleteProduct
 }
+
+
+//Note:
+// Untuk mendapatkan kata yang similar dengan "akso"
+// $text: { $search: "akso" }
+// name: { $regex: /akso/i }
+// $where: function() {return this.name.includes("akso")}
